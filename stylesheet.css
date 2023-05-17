@@ -52,13 +52,13 @@ body{
 
 h1{
     margin-left: 20px;
-    
     left: 50%;
 }
 
 .principal {
   margin-left: 50px;
   display: grid;
+  max-width:50%;
 }
 
 .center {
