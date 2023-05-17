@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+  <head> 
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="LogoJ.png" >
+    <link href="Pitagoras_css.css" rel="stylesheet" type="text/css">
+    <title>Alcance Teorema de Pitágoras</title>
+    <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+  </head> 
+  <body> 
+    <div class="topbar">
+      <img rel="shortcut icon" src="logoUEV.png">
+      <a href="#conclusion" target="_self">Conclusión</a>
+      <a href="#tablas">Tablas</a>
+      <a href="#figuras">Figuras</a>
+      <a href="#intro">Introducción</a>
+      <text><strong>Álgebra Lineal</strong></text>
+    </div>
+      <hr>
+      <h1 id="intro">TEOREMA DE PITÁGORAS</h1>
+      <h2>1. Introducción</h2>
+      <div class="principal">
+          
+      <p>
+        Cuando pensamos en teoremas matemáticos, ¿cuál es el primero que se nos viene a la cabeza? La mayoría de las personas respondería “El teorema de Pitágoras”.<br><br>
+        Este teorema nos explica que, teniendo un triángulo rectángulo, la suma de los cuadrados de sus catetos nos dará el cuadrado de su hipotenusa. Sin embargo, ¿se cumple este teorema bajo cualquier condición?<br><br>
+          
+        El filósofo pudo haber llegado a este teorema de varias maneras como por ejemplo mediante los siguientes cálculos a partir de la siguiente imagen: 
+        </p>
+    
+        <img class="center" src="triangulo1.png" width="500">
+        
+        <p>
+            En la primera prueba se parte de la semejanza de los triángulos CHA, CHB y ABC y se obtiene:
+        </p>
+        
+        <img class="center" src="ecuacion1.png" width="300">
+          
+        <p>
+            A partir del teorema del cateto, que describe que “en un triángulo rectángulo, el cuadrado de uno de los catetos es igual al producto de su proyección sobre la hipotenusa para la misma hipotenusa”, se obtiene la siguiente expresión que para llegar a ella se debe multiplicar en cruz.
+        </p>
+        
+        <img class="center" src="ecuacion2.png" width="300">
+        <p>
+            Si sumamos obtenemos:
+        </p>
+        
+        <img class="center" src="ecuacion3.png" width="300">
+        <p>Lo que es igual a:&nbsp&nbsp <var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var><br><br>
+        En la segunda prueba se parte otra vez de la similitud de los triángulos CHA, CHB y ABC según lo que dice los Elementos V.12 “la razón entre las áreas de los triángulos semejantes será igual al cuadrado de la razón de semejanza”.
+        </p>
+        <img class="center" src="ecuacion4.png" width="300">
+        <p>Si se aplican las propiedades de la suma de proporciones según lo que dice el cuarto libro de Elementos de Euclides “dadas tres rectas, encontrar una cuarta es proporcional” se obtiene:</p>
+        <img class="center" src="ecuacion5.png" width="300">
+        <p>Y, por lo tanto, finalmente tenemos:</p>
+        <img id="figuras" class="center" src="ecuacion6.png" width="300">
+    </div>
+    <h2>2. Aplicabilidad en distintas superficies</h2>
+
+    <div class="principal">
+        <p>Por otro lado, uno se puede plantear cuales son los límites de éste teorema, es decir, ¿sería aplicable a esta relación si el triángulo rectángulo se coloca sobre diferentes superficies a parte de una plana?<br><br></p>
+        <h3>2.1. Superficie plana</h3>
+        <p>El teorema de pitágoras se cumple para el siguiente triángulo con estas dimensiones:</p>
+        <img class="center" src="triangulo2.png" width="400">
+        <h3>2.2. Esfera</h3>
+        <p>Sin embargo, si colocamos los catetos formando un ángulo de 90º sobre una esfera, ¿coincidiría la hipotenusa?<br><br>
+        Según este teorema y como hemos visto en el ejemplo para un triángulo rectángulo cuyos catetos miden 9 y 12 centímetros, la hipotenusa debería medir 15, sin embargo no es así si se coloca sobre una superficie esférica, tal y como se muestra en la imagen.</p>
+        <img class="center" src="circulo.png" width="400">
+        <p>Así como no se cumple el teoréma de pitágoras con los lados del triángulo, tampoco se cumple la suma de los ángulos, que debería ser 180º.<br>Para visualizarlo utilizaremos una simulación de un triángulo rectángulo en una esfera de forma interactiva.</p>
+        
+    </div> 
+    <figure>
+    <div id="ggbApplet" class="center"></div>
+    <figcaption class="principal" style="text-align: right;">Simulación realizada por Jose Manuel Arranz para GeoGebra.</figcaption>
+    </figure>
+    <div class="principal">
+        <h3>2.3. Hiperboloide</h3>
+        <p>Por otro lado, ¿se cumpliría sobre una hiperboloide? Para comprobar dicha cuestión se repite el procedimiento anterior colocando los catetos formando un ángulo recto sobre la hiperboloide para posteriormente determinar si la hipotenusa coincide.</p>
+        <img class="center" src="hiperboloide.png" width="400">
+        <p>Como ocurre en el caso anterior, la hipotenusa de este triángulo es más corta, es decir, no mide los 15 centímetros que indica el teorema de Pitágoras.<br><br>
+        Por lo tanto, podemos decir que en una superficie esférica y una hiperbólica no se verifica el teorema de Pitágoras, pero ¿porque en el plano sí que se cumple y en las otras superficies no?<br><br>
+        Lo que tienen en común los espacios esféricos y los hiperbólicos, y que los diferencia del espacio plano, es que son curvados. Una curva se produce cuando se aparta constantemente de la dirección recta sin formar ángulos y la trayectoria de los puntos que la forman es continua.<br><br>
+        La curvatura es la base de la geometría diferencial. Sabemos que tanto en una recta como en una circunferencia todos los puntos tienen la misma curvatura; en una recta será 0 y en una circunferencia cuanto más grande el radio menos curvatura habrá. Por lo tanto, debemos tener en cuenta que en una superficie con una curvatura en un punto P la curvatura sería 𝐾𝑝 = 1/R es por esto por lo que no se cumplía el teorema de Pitágoras.</p>
+    </div>
+    <p id="tablas"></p>
+    <h2>3. Comprobación de la relación con exponentes</h2>
+    <div class="principal">
+        
+        <p>Por último, se conoce que los exponentes del teorema son cuadrados, sin embargo, no podría cumplirse la relación de los lados de un triángulo rectángulo con otros exponentes?<br><br>
+        Para comprobar dicha idea se hace la búsqueda de números que guarden las siguientes relaciones:</p>
+        <img class="center" src="ecuacion7.png" width="300">
+        <h3>3.1. <var>a<sup>3</sup></var> + <var>b<sup>3</sup></var> = <var>c<sup>3</sup></var></h3>
+        <img class="center" src="tabla1.png" width="500">
+        <h3>3.2. <var>a<sup>4</sup></var> + <var>b<sup>4</sup></var> = <var>c<sup>4</sup></var></h3>
+        <img class="center" src="tabla2.png" width="500">
+        <h3>3.3. <var>a<sup>5</sup></var> + <var>b<sup>5</sup></var> = <var>c<sup>5</sup></var></h3>
+        <img class="center" src="tabla3.png" width="500">
+      </div>
+      <p id="conclusion"></p>
+      <h2>4. Conclusión</h2>
+      <div class="principal">
+        <p>Se observa que no existe ninguna relación entre números en la cual sean todos enteros y que cumplan las fórmulas propuestas anteriormente, pero ¿por qué pasa esto?<br><br>
+        Pierre de Fermat, un abogado francés del siglo XVII interesado por las matemáticas, se hizo la misma pregunta y creó su propio teorema que enuncia:<br><br>
+        “No existen números enteros A, B, C tales que <var>a<sup>n</sup></var> + <var>b<sup>n</sup></var> = <var>c<sup>n</sup></var> cuando n ≥ 3”.<br><br>
+        Él mismo escribió en los márgenes de un libro que sabía cómo demostrarlo pero que no tenía los materiales necesarios. Finalmente, murió sin demostrar su teorema.</p>
+    </div>
+    <div class="right">
+    <p>Descarga aquí el documento original completo:<a class ="button" href= "Pitagoras_doc.pdf" download="AlcancePitágoras">Alcance Pitágoras</a></p>
+    
+    </div>
+    <footer>
+        <h2>TEOREMA DE PITÁGORAS</h2>
+    </footer>
+      
+    <script>
+    var parameters = {
+    "id": "ggbApplet",
+    "width":600,
+    "height":650,
+    "showMenuBar":true,
+    "showAlgebraInput":true,
+    "showToolBar":true,
+    "customToolBar":"0 39 | 1 501 67 , 5 19 , 72 | 2 15 45 , 18 65 , 7 37 | 4 3 8 9 , 13 44 , 58 , 47 | 16 51 64 , 70 | 10 34 53 11 , 24  20 22 , 21 23 | 55 56 57 , 12 | 36 46 , 38 49  50 , 71 | 30 29 54 32 31 33 | 17 26 62 73 , 14 68 | 25 52 60 61 | 40 41 42 , 27 28 35 , 6",
+    "showToolBarHelp":true,
+    "showResetIcon":false,
+    "enableLabelDrags":false,
+    "enableShiftDragZoom":true,
+    "enableRightClick":false,
+    "errorDialogsActive":false,
+    "useBrowserForJS":false,
+    "allowStyleBar":false,
+    "preventFocus":false,
+    "showZoomButtons":true,
+    "capturingThreshold":3,
+    // add code here to run when the applet starts
+    "appletOnLoad":function(api){ /* api.evalCommand('Segment((1,2),(3,4))');*/ },
+    "showFullscreenButton":true,
+    "scale":1,
+    "disableAutoScale":false,
+    "allowUpscale":false,
+    "clickToLoad":false,
+    "appName":"classic",
+    "buttonRounding":0.7,
+    "buttonShadows":false,
+    "language":"es",
+    // use this instead of ggbBase64 to load a material from geogebra.org
+    // "material_id":"RHYH3UQ8",
+    // use this instead of ggbBase64 to load a .ggb file
+    // "filename":"myfile.ggb",
+    "ggbBase64":"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",
+    };
+    // is3D=is 3D applet using 3D view, AV=Algebra View, SV=Spreadsheet View, CV=CAS View, EV2=Graphics View 2, CP=Construction Protocol, PC=Probability Calculator DA=Data Analysis, FI=Function Inspector, macro=Macros
+    var views = {'is3D': 1,'AV': 0,'SV': 0,'CV': 0,'EV2': 1,'CP': 0,'PC': 0,'DA': 0,'FI': 0,'macro': 0};
+    var applet = new GGBApplet(parameters, '5.0', views);
+    window.onload = function() {applet.inject('ggbApplet')};
+    applet.setPreviewImage('data:image/gif;base64,R0lGODlhAQABAAAAADs=','https://www.geogebra.org/images/GeoGebra_loading.png','https://www.geogebra.org/images/applet_play.png');
+    </script>
+  </body>
+</html> 
