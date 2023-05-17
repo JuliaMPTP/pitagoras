@@ -55,11 +55,6 @@ h1{
     left: 50%;
 }
 
-.principal {
-  margin-left: 50px;
-  display: grid;
-  max-width:50%;
-}
 
 .center {
   display: block;
