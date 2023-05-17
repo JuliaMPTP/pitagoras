@@ -9,7 +9,7 @@ body{
 .topbar {
   overflow:hidden;
   max-width: 90%;
-  display: grid;
+  display: inline-block;
 }
 
 /* Style the links inside the navigation bar */
@@ -49,18 +49,6 @@ body{
 .topbar a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-.color1{
-    color: #3e4c67;
-}
-
-.color2 {
-    color:#A4ABBD;
-}
-
-.color3{
-    color:#C1CFEF;
 }
 
 h1{
