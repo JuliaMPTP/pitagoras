@@ -1,3 +1,4 @@
+
 body{
     max-width: 100%;
     background-color: #A4ABBD;
@@ -19,16 +20,9 @@ body{
   font-size: 17px;
 }
 
-.topbar text{
-    float:left;
-    text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
 .topbar img{
-  float: right;
+  float: left;
   width: 90px;
 }
 /* Change the color of links on hover */
@@ -104,7 +98,7 @@ hr{
 h1{
     font-size: 40px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 h2{
@@ -121,10 +115,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
   width: 100%;
   background-color: #3e4c67;
-  text-align: center
+  text-align: center;
 }
 
 footer h2{
@@ -138,6 +131,12 @@ footer h5{
     margin-top: auto;
     
 }
+
 .right{
     float: right;
+}
+
+h4 {
+    text-align: center;
+    margin-top: auto;
 }
