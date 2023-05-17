@@ -9,7 +9,7 @@ body{
 .topbar {
   overflow:hidden;
   max-width: 90%;
-  display: grid;
+  position:absolute;
 }
 
 /* Style the links inside the navigation bar */
