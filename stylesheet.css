@@ -8,8 +8,7 @@ body{
 /* Add a black background color to the top navigation */
 .topbar {
   overflow:hidden;
-  max-width: 90%;
-  position:absolute;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */
