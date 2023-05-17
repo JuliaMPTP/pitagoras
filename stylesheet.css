@@ -127,6 +127,17 @@ footer {
   text-align: center
 }
 
+footer h2{
+    margin-top: 30px;
+    margin-bottom: auto;
+    margin-left: 0px;
+}
+
+footer h5{
+    max-width: 100%;
+    margin-top: auto;
+    
+}
 .right{
     float: right;
 }
