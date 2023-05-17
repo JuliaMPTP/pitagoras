@@ -21,9 +21,10 @@ body{
 }
 
 
-.topbar img{
+.topbar a img{
   float: right;
-  width: 90px;
+  width: 75px;
+  padding: 0px;
 }
 /* Change the color of links on hover */
 .topbar a:hover {
